@@ -6,14 +6,15 @@ TagManager:
   tags:
   - Ground
   - Object
+  - air
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - foreground
   - Water
   - UI
-  - 
+  - background
   - 
   - 
   - 
@@ -42,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4099553015
+    locked: 0
+  - name: foreground
+    uniqueID: 3163146873
     locked: 0
