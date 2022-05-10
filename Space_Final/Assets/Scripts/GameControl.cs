@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    public void PlayerScored()
+    public void BirdScored()
     {
 
         if (gameOver)
@@ -46,7 +46,7 @@ public class GameControl : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void PlayerDied()
+    public void BirdDied()
     {
 
         gameOvertext.SetActive(true);
