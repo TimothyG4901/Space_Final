@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObstaclePool : MonoBehaviour
 {
-    public GameObject ObjectPrefab;                                    //The column game object.
-    public int columnPoolSize = 3;                                    //How many columns to keep on standby.
+    public GameObject columnPrefab;                                    //The column game object.
+    public int columnPoolSize = 5;                                    //How many columns to keep on standby.
     public float spawnRate = 2f;                                    //How quickly columns spawn.
     public float columnMin = 0f;                                    //Minimum y value of the column position.
     public float columnMax = 0f;                                    //Maximum y value of the column position.
@@ -29,7 +29,7 @@ public class ObstaclePool : MonoBehaviour
         for (int i = 0; i < columnPoolSize; i++)
         {
 
-            columns[i] = (GameObject)Instantiate(ObjectPrefab, objectPoolPosition, Quaternion.identity);
+            columns[i] = (GameObject)Instantiate(columnPrefab, objectPoolPosition, Quaternion.identity);
         }
     }
 
